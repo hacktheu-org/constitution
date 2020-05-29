@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage{indentfirst}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{enumitem}
+\usepackage{lipsum,mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage[default]{FiraSans}
+\linespread{1.5}
+\pagenumbering{gobble}
+
+\newcommand{\linia}{\rule{\linewidth}{0.5pt}}
+
+% my own titles
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{center}
+\vspace{2ex}
+{\huge \textsc{\@title}}
+\vspace{1ex}
+\\
+\linia\\
+\@author \hfill \@date
+\vspace{4ex}
+\end{center}
+}
+\makeatother
+%%%
+
+\title{Constitution of HackTheU}
+\author{Adopted May 29, 2016}
+\date{Ratified May 29, 2020}
+
+\begin{document}
+\maketitle
+
+\end{document}
