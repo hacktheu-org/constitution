@@ -5,13 +5,22 @@
 \usepackage{enumitem}
 \usepackage{lipsum,mathptmx}
 \usepackage[margin=1in]{geometry}
-\usepackage[default]{FiraSans}
+\usepackage[T1]{fontenc}
+\usepackage{baskervillef}
+\usepackage[varqu,varl,var0]{inconsolata}
+\usepackage[scale=.95,type1]{cabin}
+\usepackage[baskerville,vvarbb]{newtxmath}
+\usepackage[cal=boondoxo]{mathalfa}
+\usepackage{graphicx}
+\usepackage{titlesec}
 \linespread{1.5}
 \pagenumbering{gobble}
 
+\setcounter{secnumdepth}{4}
+
 \newcommand{\linia}{\rule{\linewidth}{0.5pt}}
 
-% my own titles
+% my own titles & section headings
 \makeatletter
 \renewcommand{\maketitle}{
 \begin{center}
@@ -24,14 +33,307 @@
 \vspace{4ex}
 \end{center}
 }
+
+\renewcommand{\@seccntformat}[1]{%
+  \ifcsname prefix@#1\endcsname
+    \csname prefix@#1\endcsname
+  \else
+    \csname the#1\endcsname\quad
+  \fi}
+% define \prefix@section
+\newcommand\prefix@section{Article \thesection: }
 \makeatother
 %%%
 
+\titleformat{\subsection}[runin]
+{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
 \title{Constitution of HackTheU}
-\author{Adopted May 29, 2016}
-\date{Ratified May 29, 2020}
+\author{Adopted May 26, 2016}
+\date{Updated \& Ratified May 29, 2020}
 
 \begin{document}
+\begin{center}
+\includegraphics[width=.3\linewidth]{emblem}
+\end{center}
+
 \maketitle
 
+\section{Name}
+
+\subsection{}
+The name of this nonprofit organization \& student group shall be HackTheU.
+
+\section{Purpose}
+
+\subsection{} HackTheU's purpose is to foster learning in the Utah technology community through inclusive collaboration, innovation, and self-improvement.
+
+\subsection{} HackTheU will accomplish this by promoting a welcoming technology community 
+within higher education and industry throughout the state of Utah 
+by hosting free events, workshops, and hackathons.
+
+\subsection{} The primary event held by HackTheU is an annual hackathon.
+A hackathon is an event in which participants spend a set period of time exerting their creativity and determination to create an invention that is either software or hardware.
+Typically, these events span two days with the main competition running over the course of 24 hours.
+Sponsors from local companies and national companies come from across the nation to support these events
+where they can observe the highly skilled teams first hand.
+Many sponsors see it as a chance to provide opportunities for the participants and as an avenue of recruitment.
+
+\section{Membership}
+
+\subsection{} Membership is designated as a non-executive position.
+\subsection{} Members have no rights or voting privileges within the organization.
+\subsection{} In order to be considered a member,
+the student must attend at least one HackTheU sponsored event per semester and officially
+endorse the organization through official social media platforms such as
+Facebook or the University of Utah's Campus Connect.
+\subsection{} Membership is open to any currently enrolled student or employee of the University.
+\subsection{} Membership offers access to newsletters, gear, and involvement in the organization of the yearly workshops and hackathons.
+\subsection{} Members shall indemnify and hold harmless HackTheU and its directors, officers, sponsors, 
+affiliates, and members from and against all allegations, claims, actions, suits,
+demands, damages, liabilities, obligations, losses, settlements, judgements, costs
+and expenses (including without limitation attorneys' fees and costs) which arise out of, 
+relate to or result from any act or omission of HackTheU's directors or members to the fullest extent provided by law.
+
+\section{Meeting}
+
+\subsection{} Organizer meetings are held weekly on Wednesdays from 5:00PM to 6:00PM.
+\subsection{} Meetings are closed to members and only board members may attend, unless invited by an organizing member.
+\subsection{} Board members are expected to be present for the majority of meetings, 
+barring any conflicts approved by the Chief Director.
+\subsection{} At the beginning of each University of Utah semester, the board will vote to decide on a regular meeting time and place.
+\subsection{} Emergency meetings may be called by the Chief Director at any time, as needed.
+Board members will make best effort to attend emergency meetings.
+The Chief Director will ensure all board members are notified of emergency meetings.
+\subsection{} Quorum is defined as having greater than fifty (50) percent of the Organizing Board present at a meeting.
+
+\section{Events}
+
+\subsection{} All events hosted by HackTheU are free and open to members.
+\subsection{} All events hosted by HackTheU will have the explicit goal to further its mission and purpose.
+\subsection{} Notification for events will be sent out via email list, Facebook, and signs posted throughout campus. 
+Additionally, marketing will be conducted through forms of media as controlled by
+Marketing Committee as defined below.
+
+\section{Organizing Board}
+
+\subsection{} The Organizing Board will be made of Directors and Board Members --- different and separate from HackTheU members --- who will preside over specific committees that are 
+responsible for specific duties. Additional positions can be created and ratified through
+the amendment process. Organizing positions may also be eliminated and responsibilities
+of organizing board members reassigned by the same amendment process.
+
+\subsection{Roles of the Organizing Board}
+\subsubsection{Chief Director}
+\noindent The Chief Director is responsible for the general well being and head leadership 
+of the organization. 
+The Chief Director will handle the bulk of administrative work, 
+distribute tasks and responsibilities,
+and take the primary lead for the HackTheU hackathon.
+
+\subsubsection{Director}
+\noindent Directors will hold formal responsibilities inside the organization and 
+head leadership of individual committees. The Director of a committee shall be the chief
+point of contact for tasks assigned to the committee. The Director must be a University
+of Utah student and is expected to attend all weekly all-hands meetings, director's meetings,
+and meetings for their individual committee.
+Directors are expected to head a single committee.
+
+\subsubsection{Board Member}
+\noindent Board members hold no formal responsibilities aside from attending meetings,
+but are encouraged to take on tasks as they see fit. Members will join committees
+dedicated to task distribution a help complete tasks the committee is responsible for.
+Members can be students of any university. Members are expected to attend 
+the majority of the semester's all-hands meetings
+and meetings for their committee(s). If a Board Member cannot attend a meeting, they
+should notify their committee Director. Members are expected to be apart of at least
+one committee.
+
+\subsection{} In the case of vacancies, a committee nomination will be made and the notified
+individuals will be interviewed within two weeks. The Chief Director will be in charge
+of vacant, necessary roles during the search for a candidate. 
+
+\section{Elections}
+
+\subsection{} Each Chief Director for the following year will be nominated by the Chief Director from 
+the current active directors who will be continuing to serve the organization.
+If this is not possible, nominations for Chief Director 
+will be collected from the Organizing Board.
+The Chief Director may continue to serve as Chief Director for the following year 
+if affirmed by the Organizing Board as detailed in section 7.2.
+
+\subsection{} The nominee for Chief Director must be approved by the Organizing Board
+through vote. The nominee must receive greater than fifty (50) percent of votes during
+a regular meeting with quorum.
+
+\subsection{} The application process for Directors and Organizing Board Members 
+will begin in January and extend for at least two weeks. 
+
+\subsection{} A concise application will be released for interested applicants to complete at the start of Spring Semester.
+
+\subsection{} The current Organizing Board will decide by majority vote who to appoint
+as directors and members.
+
+\subsection{Board Member Removal} Organizing Board Members may be removed by the described process:
+
+\subsubsection{} 
+\noindent A Board Member may be suggested for removal by their committee Director 
+if the member is uncommunicative with all other organizing members and directors for
+more than 168 hours continuously.
+
+\subsubsection{} 
+\noindent The Chief Director will attempt to schedule an intervention with 
+the member who has been suggested for removal. The Chief Director will attempt to
+mediate any concerns by the member and attempt to re-engage them and re-assign
+their responsibilities and tasks to the member's comfort. 
+
+\subsubsection{} 
+\noindent If the Board Member cannot be re-engaged via intervention,
+they will be removed if the motion receives greater than fifty (50) percent vote from 
+the Organizing Board during a regular meeting with quorum. 
+
+\subsection{} Committee directors may be removed by the same process 
+as Board Members if either fifty
+(50) percent of their committee members vote to suggest the director for removal, 
+or the Chief Director suggests the committee director for removal. 
+
+\subsection{} The Chief Director may be removed and replaced by the same process
+if a committee director suggests 
+that they should be removed, and an intervention is scheduled with a secondary 
+committee director.
+
+\subsection{} Grounds for removal include the inadequate fulfillment of 
+aforementioned duties or the
+violation of regulations described by University policies or any federal, 
+state, or local laws. Violation to University policies or federal, state, or local laws
+will result in immediate removal of a member, Board Member, Committee Director, or
+Chief Director.
+
+\section{Finance}
+
+\subsection{} All funds will be stored in the University Credit Union account and 
+monitored on a monthly basis by the Chief Director.
+
+\subsection{} Income for the organization will primarily come from sponsorships from
+supporting corporations.
+
+\subsection{} Monetary funds will only be utilized for the explicit purpose designated in 
+the invoice or statement for which the funds are received.
+
+\subsection{} Improper use or management of funds will result in the immediate removal
+of the individual(s), with potential consequence of legal action.
+
+\subsection{} In the case of removal, the organizing committee will appoint a new
+candidate for the position by the nomination and majority vote procedures described in
+section 6.3.
+
+\subsection{} All financial transactions --- income or expenses --- must be conducted
+with respect to HackTheU's mission and must seek to preserve its 501(c)(3) status.
+
+\subsection{} The Chief Director will be expected to file all necessary paperwork 
+(including taxes, permits, and contract renewals) for the organization.
+
+\section{Committees}
+
+\subsection{} Committees which are currently formed are subject to change due to 
+needs in organizing the HackTheU hackathon. For the Spring 2020 to Fall 2021 operational
+year, working committees are:
+
+\subsubsection{Logistics}
+
+\noindent The Logistics committee will handle all logistical aspects of event planning,
+including but not limited to venue scheduling, food and catering, judging and prizes,
+and event registration.
+
+\subsubsection{Technology}
+
+\noindent The Technology committee will handle all technical aspects of HackTheU's 
+organizational needs, including but not limited to website management and design,
+judging software design, and registration platform management.
+
+\subsubsection{Marketing}
+
+\noindent The Marketing committee will design the general aesthetic for HackTheU and 
+fulfill all marketing needs, including managing social media, publishing
+promotional videos, publishing print advertising material, and designing event
+merchandise and swag.
+
+\section{Affiliations}
+
+\subsection{} HackTheU is currently affiliated with the University of Utah
+and no other institutions.
+
+\section{Advisor}
+
+\subsection{} John Melchi, a faculty member in the School of Computing, is the 
+advisor for this organization.
+
+\subsection{} Cesar Sanchez, a manager of the Sorenson Center for Innovation, is the
+liaison for the school of business to HackTheU.
+
+\section{Ratification}
+
+\subsection{} The constitution will be ratified by membership on the final day of election.
+
+\section{Amendments}
+
+\subsection{} Amendments proposed will be ratified through a bicameral process.
+An amendment proposed by the Chief Director must receive greater than fifty percent approval
+from the Organizing Board and a veto by the Chief Director can be over-ridden by a 
+two-thirds majority vote from the Organizing Board.
+
+\subsection{} Amendments to the Constitution must be submitted to and approved by the 
+Department of Student Leadership \& Involvement before they become effective.
+
+\section{Bylaws}
+
+\subsection{} Rules and Regulations will follow the same procedure as the Amendment 
+process and can be approved in bulk or through Amendment.
+
+\section{Dissolution}
+
+\subsection{} Upon dissolution of the organization, all assets will be donated to 
+a nonprofit organization designated by a majority vote by the current directors
+or an organization chosen by the School of Computing of the University of Utah.
+
+\section{Address and Contact}
+
+\noindent The School of Computing of the University of Utah
+
+\noindent 50 S Central Campus Dr Room 3190
+
+\noindent Salt Lake City, UT 84112
+
+\noindent Email: info@hacktheu.org
+
+\noindent Website: www.hacktheu.org
+
+\section{Compliance}
+
+\subsection{} We agree to abide by all regulation described in the 
+Guidelines for Recognized Student Organizations, 
+all University policies, in addition to all federal, state, and local laws.
+
+\section{Nondiscrimination \& Accessibility Statement}
+
+\noindent This organization shall not discriminate on the basis of race, color, religion, 
+national origin, sex, sexual orientation, gender identity/expression, age, or status
+as an individual with disability, or as a protected veteran, and any other status protected
+by applicable state or federal law. (University of Utah, Policy 6-400, Section II-E). \\
+
+\noindent Additionally, the University endeavors to provide reasonable accommodations
+and to ensure equal access to qualified persons with disabilities. Inquired concerning 
+perceived discrimination or requests for disability accommodations may be referred to the 
+University's Title IX/ADA/Section 504 Coordinator: \\
+
+\noindent Director, Office of Equal Opportunity and Affirmative Action
+
+\noindent 201 South Presidents Circle, Rm. 135
+
+\noindent Salt Lake City, UT 84112
+
+\noindent 801-581-8365 (voice/tdd)
+
+\noindent 801-585-5746 (fax)
+
+\noindent www.oeo.utah.edu
 \end{document}
